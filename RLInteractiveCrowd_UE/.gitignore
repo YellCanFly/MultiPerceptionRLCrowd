@@ -1,0 +1,11 @@
+/.vs*
+/Binaries
+/DerivedDataCache
+/Intermediate
+/Platforms
+/Saved
+/Content/Collections
+/Content/Developers
+/Plugins/BitUtils/Intermediate/
+/Plugins/BlueprintJson/Intermediate/
+/Plugins/TcpSocketPlugin/Intermediate/
