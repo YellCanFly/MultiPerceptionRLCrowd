@@ -1,0 +1,93 @@
+num_agents: 30
+agent_radius: 0.5
+num_rays: 50
+max_ray_distance: 10.0
+ray_vision_lamda: 0.2
+max_speed_orientation: 1.6
+max_speed_perpendicular: 0.5
+max_acceleration: 2.0
+max_angular_velocity: 0.7853981633974483
+agent_terrain_obs_range: [15.0, 15.0]
+start_env_size: [40.0, 40.0]
+end_env_size: [40.0, 40.0]
+env_scale_frequency: 20
+dt: 0.04
+action_interval_step_num: 1
+min_walking_distance: 10.0
+max_alive_time: 100.0
+max_time_overlapped_with_obstacle: 2.0
+agent_terrain_threshold: 0.9
+implicit_agent_spawn_threshold: 0.0
+implicit_agent_target_threshold: 0.9
+update_nav_point_threshold: 5.0
+auto_launch_ue: True
+ip: 127.0.0.1
+port: 12345
+ue_command: C:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\UnrealEditor.exe
+uproject_path: C:\Users\50191\Desktop\RLInteractiveCrowd-cpp\RLInteractiveCrowd_UE\RLInteractiveCrowd.uproject
+map_path: /Game/Maps/L_RLTrain.umap
+data_buffer_size: 200000
+num_user_agents_chase: 0
+num_user_agents_random: 0
+num_obstacles: 0
+terrain_filename: terrain_grayscale_256x256.png
+terrain_obs_dim: [32, 32]
+alive_penalty: 7.0
+velocity_smooth_penalty: 0.25
+collision_penalty: 100.0
+target_approach_distance_reward: 100.0
+target_away_distance_penalty_ratio: 1.0
+use_nav_point: False
+nav_point_approach_distance_reward: 0.0
+target_arrive_reward: 1000.0
+obstacle_penalty: 1.0
+obstacle_time_coef: 0.1
+terrain_penalty: 50.0
+train_strategy: single_individual_feature_combine_weight_net
+model_name: ppo
+ablation_type: RNT
+train_terrain_specific_name: turning
+terrain_prev_set: []
+terrain_prev_prob: 0.2
+n_episodes: 10000
+num_new_agents_per_episode: 200
+lr_actor: 2.5e-05
+lr_critic: 0.00025
+fc1_dims: 400
+fc2_dims: 300
+fc2_dim_img: 150
+pretrained_model_path: 
+pretrained_entity_model_path: checkpoint_ppo/3090_1218_WeightMLP_Pretrained
+pretrained_implicit_model_path: checkpoint_ppo/3090_1218_WeightMLP_Pretrained
+fix_entity: False
+use_user_weight_range: False
+entity_weight_range: [1.0, 1.0]
+implicit_weight_range: [1.0, 1.0]
+delay_learn_step: 256
+general_update_frequency: 20
+update_best_avg_num: 100
+checkpoint_save_freq: 50
+action_std_decay_freq: 5000
+ppo_max_mem: 256
+action_std_init: 0.6
+action_std_decay_rate: 0.005
+min_action_std: 0.6
+ppo_batch_size: 32
+ppo_n_epochs: 8
+ddpg_max_mem: 100000
+ddpg_batch_size: 1024
+td3_max_mem: 100000
+td3_batch_size: 64
+policy_noise: 0.1
+noise_clip: 0.25
+explore_noise: 0.1
+eval_n_episodes: 100
+load_time_str: 
+eval_env_size: [40.0, 40.0]
+eval_save_frame: True
+eval_terrain_specific_name: white
+eval_train_type: implicit
+eval_reward_weight_collision: 1.0
+eval_reward_weight_terrain: 1.0
+log_update_freq: 100
+device: cuda:0

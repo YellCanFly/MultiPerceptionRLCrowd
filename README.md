@@ -143,7 +143,7 @@ Follow these steps to ensure the project is properly set up and ready to run.
 ### 1. Clone This Repository
 First, clone the repository to your local machine:
 ```cmd
-git clone https://github.com/<your_username>/RLImplicitPerceptionCrowd.git
+git clone https://github.com/YellCanFly/MultiPerceptionRLCrowd.git
 cd RLImplicitPerceptionCrowd
 ```
 
