@@ -248,12 +248,16 @@ python train.py --n_episodes 10000 --train_terrain_specific_name "turning" --num
 If you find this work useful in your research, please consider citing:
 
 ```bibtex
-@article{huang2026multi,
-  title={Multi-Perception Crowd: Learning to combine entity and implicit perception for diverse crowd simulation},
+@ARTICLE{11579788,
   author={Huang, Kexiang and Argudo, Oscar and Ding, Gangyi and Pelechano, Nuria},
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  title={Multi-Perception Crowd: Learning to Combine Entity and Implicit Perception for Diverse Crowd Simulation},
   year={2026},
-  publisher={TechRxiv}
-}
+  volume={32},
+  number={9},
+  pages={7936-7950},
+  keywords={Modeling;Simulation;Navigation;Training;Distance measurement;Timing;Modules (abstract algebra);Visualization;Learning (artificial intelligence);Collision avoidance;Crowd simulation;reinforcement learning;crowd authoring;animations},
+  doi={10.1109/TVCG.2026.3707675}}
 ```
 
 ---
